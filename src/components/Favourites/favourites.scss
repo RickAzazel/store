@@ -1,0 +1,115 @@
+.favourites {
+	flex: 0 1 74%;
+	background: $dark-blue;
+	color: $white;
+	padding: 3rem;
+	border-radius: 1rem;
+	margin-bottom: 2rem;
+	text-align: center;
+
+	@include _1200 {
+		flex-basis: 100%;
+		min-height: 500px;
+	}
+
+	&__title {
+		margin-bottom: 2rem;
+	}
+
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 2rem;
+
+		&-item {
+			flex: 0 1 31.7%;
+			display: flex;
+			flex-direction: column;
+			background: $blue;
+			position: relative;
+			border-radius: 1rem;
+
+			@include _979 {
+				flex-basis: 31.2%;
+			}
+
+			@include _768 {
+				flex-basis: 47.7%;
+			}
+
+			@include _576 {
+				flex-basis: 100%;
+			}
+		}
+
+		&-content {
+			padding: 2rem 1rem;
+			text-align: left;
+		}
+
+		&-image {
+			min-height: 200px;
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+			border-radius: 1rem;
+
+			@include _768 {
+				min-width: auto;
+				min-height: 300px;
+			}
+		}
+
+		&-title {
+			font-size: 2rem;
+			margin-bottom: .5rem;
+		}
+
+		&-subtitle {
+			color: $light;
+			font-weight: 200;
+			text-transform: uppercase;
+			margin-bottom: 1rem;
+		}
+
+		&-description {
+			margin-bottom: 3rem;
+		}
+
+		&-bottom {
+			display: flex;
+			flex-direction: column;
+		}
+
+		&-price {
+			font-size: 3rem;
+			margin: 0 3rem 1rem 0;
+		}
+
+		&-button {
+			width: 100%;
+			padding: 1rem 3rem;
+			background: $yellow;
+			color: $white;
+			border-radius: 1rem;
+			transition: all .3s;
+		}
+
+		&-close {
+			position: absolute;
+			top: 10px;
+			right: 15px;
+			transition: all .3s;
+		}
+	}
+}
+
+@media (hover: hover) {
+	.favourites__list-close:hover {
+		color: $red;
+	}
+
+	.favourites__list-button:hover {
+		background-color: $light-yellow;
+	}
+}

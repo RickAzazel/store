@@ -1,0 +1,81 @@
+.user-signup {
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 100;
+	width: 300px;
+	height: 100dvh;
+	padding-inline: 3rem;
+	background-color: $dark;
+	color: $white;
+
+	@include _480 {
+		width: 100%;
+	}
+
+	&__overlay {
+		position: fixed;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		width: 100dvw;
+		height: 100dvh;
+		background: $very-light;
+		z-index: 10;
+	}
+
+	&__close-form {
+		position: absolute;
+		top: 23px;
+		right: 25px;
+	}
+
+	&__title {
+		font-size: 2rem;
+		font-weight: 200;
+		text-align: center;
+		padding-block: 2rem;
+	}
+
+	&__input-control {
+		margin-bottom: 2rem;
+
+		input {
+			width: 100%;
+			padding: 1rem 2rem;
+			border-radius: 1rem;
+		}
+	}
+
+	&__link {
+		cursor: pointer;
+		display: block;
+		font-size: 1.3rem;
+		text-align: center;
+		margin-bottom: 2rem;
+		color: $white;
+		transition: all .3s;
+	}
+
+	&__submit-button {
+		font-weight: 500;
+		width: 100%;
+		padding: 1rem 3rem;
+		border-radius: 1rem;
+		background: $yellow;
+		color: $white;
+		transition: all .3s;
+	}
+}
+
+/* MEDIA */
+@media (hover: hover) {
+	.user-signup__submit-button:hover {
+		background: $light-yellow;
+	}
+
+	.user-signup__link:hover {
+		color: $blue;
+	}
+}

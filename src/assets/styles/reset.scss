@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+
+body,
+button,
+input,
+textarea {
+	font-family: 'Poppins', sans-serif;
+	font-size: 1.6rem;
+	font-weight: 400;
+}
+
+input:focus {
+	outline: none;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+}
+
+button {
+	cursor: pointer;
+	border: none;
+	outline: none;
+}
+
+.app {
+	overflow-x: hidden;
+	min-height: 100dvh;
+	background: $white;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.main {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	gap: 2rem;
+
+	@include _1200 {
+		padding-inline: 3rem;
+	}
+}
+
+.preloader {
+	flex-grow: 1;
+	align-self: center;
+	text-align: center;
+	color: $white;
+	font-size: 2rem;
+}
+
+.button-close {
+	color: $white;
+	background: none;
+	transition: all .3s;
+}
+
+.error-message {
+	line-height: 1.9rem;
+	margin-top: .5rem;
+	margin-left: .5rem;
+	color: $red;
+}
+
+.empty-message {
+	font-size: 3rem;
+	font-weight: 200;
+}
+
+/* MEDIA */
+@media (hover: hover) {
+	.button-close:hover {
+		color: $red;
+	}
+}

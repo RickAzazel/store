@@ -1,0 +1,75 @@
+.category {
+	background: $dark-blue;
+	border-radius: 1rem;
+	margin-bottom: 4rem;
+	width: 100%;
+
+	&__title {
+		text-align: center;
+		color: $white;
+		padding-block: 3rem;
+	}
+
+	&__filters {
+		display: flex;
+		margin-left: 3rem;
+		flex-wrap: wrap;
+	}
+
+	&__filter {
+		position: relative;
+		margin-right: 2rem;
+		margin-bottom: 2rem;
+		width: 240px;
+
+		@include _576 {
+			width: 100%;
+		}
+
+		input {
+			width: 100%;
+			border-radius: 1rem;
+			padding: .7rem 10rem .7rem 2rem;
+
+			@include _350 {
+				font-size: 1.3rem;
+				padding-right: 7.5rem;
+			}
+		}
+	}
+
+	&__back {
+		margin-left: 3rem;
+		padding-block: 2rem;
+
+		&-reset {
+			font-weight: 500;
+			padding: 1rem 3rem;
+			background: $yellow;
+			color: $white;
+			border-radius: 1rem;
+			transition: all .3s;
+		}
+	}
+
+	&__more {
+		text-align: center;
+		margin-bottom: 4rem;
+
+		&-button {
+			font-weight: 500;
+			padding: 1rem 3rem;
+			border-radius: 1rem;
+			color: $white;
+			background: $yellow;
+		}
+	}
+}
+
+/* MEDIA */
+@media (hover: hover) {
+	.category__back button:hover,
+	.category__more button:hover {
+		background: $light-yellow;
+	}
+}

@@ -1,0 +1,27 @@
+.socials {
+	display: flex;
+
+	&__link {
+		color: $white;
+		margin-left: 1rem;
+		transition: all .3s;
+		display: flex;
+		svg {
+			@include _480 {
+				width: 18px;
+			}
+	
+			@include _350 {
+				width: 15px;
+			}
+		}
+	}
+}
+
+/* MEDIA */
+@media (hover: hover) {
+
+	.socials__link:hover {
+		color: $blue;
+	}
+}

@@ -1,0 +1,39 @@
+.burger {
+	font-size: 4rem;
+	color: $dark-blue;
+	transition: all .3s;
+
+	@include _768 {
+		font-size: 3rem;
+		margin-right: 3rem;
+	}
+
+	@include _480 {
+		font-size: 2rem;
+	}
+
+	@include _350 {
+		margin-bottom: 3rem;
+	}
+}
+
+.burger {
+	display: none;
+
+	@include _1200 {
+		display: flex;
+		position: absolute;
+		cursor: pointer;
+	}
+
+	@include _350 {
+		position: static;
+	}
+}
+
+/* MEDIA */
+@media (hover: hover) {
+	.burger:hover {
+		color: $blue;
+	}
+}

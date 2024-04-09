@@ -1,0 +1,25 @@
+.logo__link {
+	font-size: 4rem;
+	color: $dark-blue;
+	transition: all .3s;
+
+	@include _768 {
+		font-size: 3rem;
+		margin-right: 3rem;
+	}
+
+	@include _480 {
+		font-size: 2rem;
+	}
+
+	@include _350 {
+		margin-bottom: 3rem;
+	}
+}
+
+/* MEDIA */
+@media (hover: hover) {
+	.logo__link:hover {
+		color: $blue;
+	}
+}

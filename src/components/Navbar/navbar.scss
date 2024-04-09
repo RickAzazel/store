@@ -1,0 +1,19 @@
+.menu {
+	flex: 1 1 auto;
+
+	&__link {
+		color: $light;
+		transition: all .3s;
+
+		&--active {
+			color: $light-blue;
+		}
+	}
+}
+
+/* MEDIA */
+@media (hover: hover) {
+	.menu__link:hover {
+		color: $blue;
+	}
+}
