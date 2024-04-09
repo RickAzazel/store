@@ -11,12 +11,12 @@ import Cart from '../Cart/Cart';
 import Favourites from '../Favourites/Favourites';
 
 const AppRoutes = () => {
-	const location = useLocation();
-	const navigate = useNavigate();
+	// const location = useLocation();
+	// const navigate = useNavigate();
 
-	useEffect(() => {
-		if (location.pathname === '/store/') navigate(ROUTES.HOME);
-	}, [navigate, location])
+	// useEffect(() => {
+	// 	if (location.pathname === '/store/') navigate(ROUTES.HOME);
+	// }, [navigate, location])
 
 	return (
 		<Routes>

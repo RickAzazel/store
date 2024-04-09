@@ -11,7 +11,7 @@ import App from "./components/App/App";
 
 createRoot(document.getElementById('root')).render(
 	<Provider store={store}>
-		<BrowserRouter>
+		<BrowserRouter basename="/store">
 			<App />
 		</BrowserRouter>
 	</Provider>
